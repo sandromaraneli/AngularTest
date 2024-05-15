@@ -1,0 +1,57 @@
+<div class="whole">
+    <img class="backpicture" src="https://t4.ftcdn.net/jpg/02/32/16/07/360_F_232160763_FuTBWDd981tvYEJFXpFZtolm8l4ct0Nz.jpg"
+     alt="">
+<div class="container">
+    <div class="form-group">
+        <label for="">Enter Image</label>
+        <input [(ngModel)]="userImg" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Enter Name</label>
+        <input [(ngModel)]="userName" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Enter Surname</label>
+        <input [(ngModel)]="userSurname" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Enter Age</label>
+        <input [(ngModel)]="userAge" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Enter Email</label>
+        <input [(ngModel)]="userEmail" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Enter Cardinfo</label>
+        <input [(ngModel)]="userCard" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-success">save</button>
+
+    </div>
+
+    <div class="space">
+
+    </div>
+   
+
+    <section class="info">
+       <div class="card" >
+        <img [src]="userImg" class="class-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{userName}}</h5>
+          <h5 class="card-text">{{userSurname}}</h5>
+          <p class="card-text">{{userEmail}}</p>
+          <p class="card-text">{{userCard}}</p>
+          <a href="" class="btn btn-prmary">{{userAge}}</a>
+        </div>
+
+       </div>
+    </section>
+
+
+</div>
+</div>
+
+

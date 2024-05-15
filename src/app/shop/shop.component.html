@@ -1,0 +1,41 @@
+ <div>
+   <label>Min Price</label>
+    <input [(ngModel)]="minPrice" type="text" class="form-control">
+  
+    <label>Max Price</label>
+    <input [(ngModel)]="maxPrice"  type="text" class="form-control">
+  
+    <button (click)="filter()" class="btn btn-success">Search</button>
+  </div>
+  
+  
+  
+  <div class="container">
+  
+      <div *ngFor="let product of filteredList" class="card" style="width: 18rem;">
+          <img [src]="product.category.image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{product.products.price.beforeDiscount}}</h5>
+            <h5 class="card-title">{{product.category.name}}</h5>
+            <h5 class="card-title"></h5>
+  
+          </div>
+        </div>
+  
+  </div>   
+  <br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
